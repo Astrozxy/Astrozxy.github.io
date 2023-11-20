@@ -102,15 +102,17 @@
 						<article id="about">
 							<h2 class="major">About Me</h2>
 							<!-- Here is an image that you can customize for this page -->
-							<span class="image main">
+							<!--<span class="image main">
 								<img src="images/head_long.jpg" alt=""/>
-							</span>
+							</span>-->
 							<!-- Here are three paragraphs where you can fill out information about yourself -->
 							<p>
+							I am a third-year graduate student at MPIA. I have a physics background and am generally working on interstellar medium, dust extinction, and machine learning<br><br>
+
 								<!-- Items contained in <b> tags are bolded! -->
 								<b>Education:</b><br>
 								2021-present, Graduate student @ MPIA<br>
-								2021, Bachelor's degree of Natural Science @ THU
+								2021, Bachelor's degree of Natural Science @ Dep. of Physics, THU
 							</p>
 							<p>
 								<b>Research Interests:</b><br>
@@ -122,45 +124,86 @@
 							<p>
 								<b>Publications:</b> <a href="https://ui.adsabs.harvard.edu/public-libraries/uLFXolhCQhqAnsgh9P51RA">ADS library</a>
 							</p>
+
+							I come from Baotou, "the city of deers". Besides astronomy, I like spending all day at history museums and learn random facts that are fun, such as: </p>
+
+							<span class="major">
+								<img src="images/hunyi.jpg" style="width:360px;display: block; margin: auto;"/>
+								<figcaption>This is how astronomers in 16th century measured RA and DEC. 
+								</b> (Shot by me in the Ancient Observatory, Beijing)</figcaption>
+							</span>
+
+							</p>
+
+							<style>  
+								.like-button {  
+								    margin-bottom: 10px;  
+								}  
+							</style>  
+							<button class="like-button" onclick="likePost()">Like</button>  
+ 							<p id="likeCount">Thanks for your 0 like(s)!</p> 
+
 						</article>
 
 						<!-- Here is the "Research" card. -->
 						<article id="research">
 							<h2 class="major">Research</h2>
-							<span class="image main">
-								<img src="images/dustmap_1.png"style="object-fit: initial;"/>
-							</span>
-							<p>
-								<!-- 	A <br> tag puts in a break so that the text that follows it displays on
-									the next line.
-								-->
-								<b>Stellar parameters from Gaia XP spectra</b><br>
-							</p>
-							<span class="image main">
-								<img src="images/dustmap_1.png"/>
+						
+							<span class="major">
+								<img src="images/dustmap_1.png" style="width:570px;height:291px;object-fit: cover;"/>
 							</span>
 
 
 	
 							<p>
-								<b>Dust Rv map of the Milky Way</b><br>Project description, including further links to posters, talks, publications.
+								<b>Parameters of 220 million stars from Gaia BP/RP spectra </b>
+								<br>
+
+							Gaia DR3 contains low-resolution XP spectra of over 220 million stars, giving a unique opportunity to measure 								dust extinction and its vatiation in 3D.
+							<br>
+							We build a forward model that maps (Teff, [Fe/H], logg) to Gaia XP, and ultilize this model to determine the 								<a href="https://zenodo.org/records/7692681" style="color: red;"> stellar types, extinction and distances for 								all 220 million Gaia XP stars</a>.
+							<br>
+							For more details, please take a look at <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.524.1855Z/abstract" style="color: red;">
+							our paper</a>.
+
+							<br>
+							<br>
+							<b>Variation of dust extinction in the milky way</b>
+							<br>
+							The variation of dust extinction is modelled by the parmeter Rv = A(V)/E(B-V) , which is determined by the 								size distribution of the interstellar dust. Dust Rv is an also important tracer of local 								physical and chemical environment, such as SNe, star formation and molecular clouds.
+							<br>
+							Ultilizing Gaia XP spectra, we determine Rv for over 68 million high-extinction stars, which would be one of 								the largest Rv catalog up to 2023. 
+							<br>
+							We discover some correlation of Rv and are currently working on explaining them.
+
 							</p>
 						</article>
 
 						<!-- Here is the "Presentation" card. -->
 						<article id="pre">
-							<h2 class="major">Presentation</h2>
+							<h2 class="major">Talks</h2>
 							<span class="image main">
-								<img src="images/pic03.jpg" alt=""/>
+								<img src="images/head_long.jpg" style="width:360px;display: block; margin: auto;"/>
 							</span>
 							<p>
-								<b>Teaching:</b>
-							</p>
-							<p>
-								<b>Outreach:</b>
-							</p>
-							<p>
-								<b>Equity & Inclusion:</b>
+								
+								(Title, Type, Time, Link & Place)
+								<br>
+								1.  Variation of extrinction curces from PS1, 2MASS, WISE \& Gaia | Interstellar 									Institute, July 2022 @ Institut Pascal , Saclay
+								<br>
+								2. Stellar parameters of 220 million stars from Gaia XP spectra | MPIA Science day, 									December 2022 @ MPIA, Heidelberg
+								<br>
+								3.  Stellar parameters from Gaia XP spectra using a forward model | Gaia 									XPloration, May 2023 @ IoA, Cambridge
+								<br>
+								4.  A 3D Rv map based on Gaia XP spectra | August 2023 @ DoA, Tsinghua University, 									Beijing
+								<br>
+								5. Inferred stellar parameters from 220 million XP spectra using an empirical 									forward model  | <a href="http://www.nao.cas.cn/news/xs/202307/t20230731_6848316.html" 
+								style="color: red;">NAOC Seminar, August 2023</a>
+								@ NAOC, Beijing
+								<br>
+								6. Inferred stellar parameters from 220 million XP spectra using an empirical forward model  | 									<a href="https://kiaa.pku.edu.cn/info/1025/9020.htm" 
+								style="color: red;">KIAA Seminar, August 2023</a> @ KIAA, PKU, Beijing
+
 							</p>
 						</article>
 
@@ -170,9 +213,7 @@
 							<p> 
 								<b>Email:</b> xzhang@mpia.de
 							</p>
-							<p> 
-								<b>Wechat:</b>Astrozxy
-							</p>
+							
 							<p> 
 								<b>Address:</b> Königstuhl 17, 69117 Heidelberg
 							</p>
@@ -226,6 +267,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+
+			let likeCount = 0;  
+			const likeButton = document.getElementById('likeCount');  
+			const likeCountElement = document.getElementById('likeCount');  
+			function likePost() {  
+			  likeCount++; 
+			  likeCountElement.textContent = 'Thanks for your ' + likeCount + ' like(s)!';   
+			}
+
+			</script>
 
 	</body>
 </html>
