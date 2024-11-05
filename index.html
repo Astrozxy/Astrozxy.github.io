@@ -107,7 +107,7 @@
 							</span>-->
 							<!-- Here are three paragraphs where you can fill out information about yourself -->
 							<p>
-							I am a third-year graduate student at MPIA. I have a physics background and am generally working on interstellar medium, dust extinction, and machine learning<br><br>
+							I am a fourth-year graduate student at MPIA. I have a physics background and am generally working on interstellar medium, dust extinction, and machine learning<br><br>
 
 								<!-- Items contained in <b> tags are bolded! -->
 								<b>Education:</b><br>
@@ -116,10 +116,13 @@
 							</p>
 							<p>
 								<b>Research Interests:</b><br>
-								Interstellar medium | 
-								3D dust maps of MW |
-								Stellar parameters from low-resolution spectroscopy |
-								Gaia
+								Topics: Chemical evolution of the interstellar medium | 
+								3D dust maps of the MW | PAHs
+							<br>
+								Methods: Machine learning with large spectroscopic and photometric surveys
+								 
+							<br>
+								Instruments: Gaia | JWST | SPHEREx | Rubin/LSST 
 							</p>
 							<p>
 								<b>Publications:</b><br>
@@ -132,8 +135,8 @@
 
 							<span class="major">
 								<img src="images/hunyi.jpg" style="width:360px;display: block; margin: auto;"/>
-								<figcaption>This is how astronomers in 16th century measured RA and DEC. 
-								</b> (Shot by me in the Ancient Observatory, Beijing)</figcaption>
+								<figcaption>This is how astronomers in 16th century measured stellar coordinates. 
+								</b> (Shot by me in the Ancient Observatory, Beijing, 2018)</figcaption>
 							</span>
 
 							</p>
@@ -144,7 +147,7 @@
 								}  
 							</style>  
 							<button class="like-button" onclick="likePost()">Like</button>  
- 							<p id="likeCount">Thanks for your 648 like(s)!</p> 
+ 							<p id="likeCount">Thanks for your like(s)!</p> 
 
 						</article>
 
@@ -172,6 +175,11 @@
 							<br>
 							<b>Variation of dust extinction in the milky way</b>
 							<br>
+							<span class="major">
+								<img src="images/Bird_eye_with_O_stars_slides_version.png" style="width:570px;height:291px;object-fit: cover;"/>
+							</span>
+
+
 							The variation of dust extinction is modelled by the parmeter R(V) (≡ A(V)/E(B-V) ), which is determined by the 								size distribution and chemical composition of the interstellar dust. Dust Rv is an also important tracer of local 								physical and chemical environment, such as SNe, star formation and molecular clouds.
 							<br>
 							Ultilizing Gaia XP spectra, we determine Rv for ~ 130 million high-extinction stars in the Milky Way, LMC and SMC, which is the largest Rv catalog <a href="https://doi.org/10.5281/zenodo.11394477" style="color: red;"> (zenodo)</a> up to 2024. 
@@ -185,8 +193,11 @@
 								<img src="images/Rv_sky_LMC.png" style="width:570px;height:291px;object-fit: cover;"/>
 							</span>
 
-							We discover exciting correlation of Rv and are currently working on explaining them. 
-
+							We find evidence of PAH-driven 𝑅(𝑉) variation observationally and theoretically. The 𝑅(𝑉) value in translucent gas has an anticorrelation with the PAH abundance, as the picture shown above. Growth of PAH strengthens the 2175 Å feature, of which the red wing contributes to B band extinction but is almost negligible to V band, which leads to decrease of 𝑅(𝑉).
+<br>
+If proven, this leads to a revolutionary change on the picture of 𝑅(𝑉) as well as all fields of astronomy that utilize correction of extinction. Notably, Type Ia supernovae are observed to have anomalously low R(V), which could be connected to potential PAH growth in supernova shocks. Our findings also underscore the importance of PAH growth in the ISM, a possibility hinted at by recent PAH emission trends with metallicity. 
+<br>
+This paper is under review, <a href="https://arxiv.org/abs/2410.23171" style="color:red;"> arXiv: 2410.23171 </a>.
 							</p>
 						</article>
 
@@ -280,7 +291,7 @@
 			<script src="assets/js/main.js"></script>
 			<script>
 
-			let likeCount = 648;  
+			let likeCount = 0;  
 			const likeButton = document.getElementById('likeCount');  
 			const likeCountElement = document.getElementById('likeCount');  
 			function likePost() {  
